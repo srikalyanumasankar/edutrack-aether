@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0b0b20, #050514 70%);
+  color: #e0e0e0;
+  overflow-x: hidden;
+}
+
+.header {
+  text-align: center;
+  padding: 30px 0;
+  background: linear-gradient(90deg, #0ff, #7b2ff7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 10px #00ffff88; }
+  100% { text-shadow: 0 0 25px #7b2ff788; }
+}
+
+.accent {
+  color: #00eaff;
+}
+
+.tagline {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9em;
+  color: #aaa;
+  margin-top: -10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px;
+}
+
+.card {
+  background: rgba(20, 20, 40, 0.85);
+  border: 1px solid #00eaff33;
+  border-radius: 12px;
+  padding: 20px;
+  width: 320px;
+  box-shadow: 0 0 20px #00eaff11;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 25px #00eaff44;
+  transform: translateY(-5px);
+}
+
+h2 {
+  color: #00eaff;
+  border-bottom: 1px solid #00eaff55;
+  padding-bottom: 6px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  background: #111;
+  border: 1px solid #00eaff33;
+  border-radius: 6px;
+  color: #00ffff;
+  text-align: center;
+  outline: none;
+}
+
+input:focus {
+  border-color: #00eaff;
+  box-shadow: 0 0 10px #00eaff55;
+}
+
+button {
+  background: linear-gradient(90deg, #00eaff, #7b2ff7);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00eaff55;
+}
+
+button.danger {
+  background: #ff0055;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  color: #eee;
+  font-size: 0.9em;
+}
+
+th, td {
+  border: 1px solid #00eaff33;
+  padding: 6px;
+}
+
+th {
+  background: rgba(0, 234, 255, 0.15);
+}
+
+/* Report Card Table */
+#reportCard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#reportCard th, #reportCard td {
+  border: 1px solid #00eaff33;
+  padding: 6px;
+  font-size: 0.9em;
+}
+
+#reportCard th {
+  background: rgba(0, 234, 255, 0.15);
+}
+
+/* Back button */
+#reportCard button {
+  background: linear-gradient(90deg, #00eaff, #7b2ff7);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+#reportCard button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00eaff66;
+}
+
+/* Main and report pages layout */
+#mainPage, #reportPage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px;
+}
+
+/* Popups */
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(90deg, #00eaff, #7b2ff7);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #00eaff88;
+  animation: fade 1.5s ease forwards;
+  font-family: 'Orbitron', sans-serif;
+}
+
+@keyframes fade {
+  0% { opacity: 0; transform: translateY(-20px); }
+  20% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px);}
+  100% { opacity: 1; transform: translateY(0);}
+}

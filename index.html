@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduTrack Aether Edition</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>EduTrack <span class="accent">Aether</span> Edition</h1>
+  <p class="tagline">Smart Academic Analyzer — investigation project</p>
+</div>
+
+<!-- Main Page -->
+<div id="mainPage" class="container">
+
+  <!-- Add Student -->
+  <div class="card">
+    <h2>➕ Add Student</h2>
+    <input id="name" placeholder="Student Name">
+    <input id="subjects" placeholder="Subjects (comma separated)">
+    <input id="marks" placeholder="Marks (comma separated)">
+    <button onclick="addStudent()">Add Student</button>
+  </div>
+
+  <!-- Student Database -->
+  <div class="card">
+    <h2>📋 Student Database</h2>
+    <div class="actions">
+      <button onclick="showStudents()">Show All</button>
+      <button class="danger" onclick="clearData()">Clear All</button>
+    </div>
+    <table id="studentTable">
+      <tr><th>Student Name (click for report card)</th></tr>
+    </table>
+  </div>
+
+  <!-- Subject Analysis -->
+  <div class="card">
+    <h2>📘 Subject Analysis</h2>
+    <input id="subjectQuery" placeholder="Enter Subject">
+    <button onclick="analyzeSubject()">Analyze</button>
+    <div id="result"></div>
+  </div>
+
+  <!-- Class Analytics -->
+  <div class="card">
+    <h2>📊 Class Analytics</h2>
+    <button onclick="showClassAnalytics()">Generate Analytics</button>
+    <div id="classAnalytics"></div>
+  </div>
+
+</div>
+
+<!-- Report Card Page -->
+<div id="reportPage" class="container" style="display:none;">
+  <div class="card" id="reportCard"></div>
+</div>
+
+<footer>
+  <p>Designed by <span class="accent">Sri Kalyan</span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
