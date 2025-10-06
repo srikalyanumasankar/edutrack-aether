@@ -1,6 +1,6 @@
 # EduTrack Aether Edition
 
-**EduTrack Aether Edition** is a frontend-only academic dashboard for Grade 11 students using NCERT concepts. It provides an interactive, neon-style interface to track student performance.
+**EduTrack Aether Edition** is a frontend-only academic dashboard. It provides an interactive, neon-style interface to track student performance.
 
 ## Features
 
