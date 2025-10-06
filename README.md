@@ -1,5 +1,3 @@
-# edutrack-aether
-EduTrack Aether Edition is a frontend academic dashboard. Add students, view report cards with marks &amp; grades, analyze subjects, and generate class analytics. Interactive neon UI, fully offline, data stored locally via localStorage.
 # EduTrack Aether Edition
 
 **EduTrack Aether Edition** is a frontend-only academic dashboard for Grade 11 students using NCERT concepts. It provides an interactive, neon-style interface to track student performance.
