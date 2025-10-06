@@ -202,3 +202,36 @@ function getGrade(mark) {
   else if (mark >= 40) return "D";
   else return "F";
 }
+function showPythonCode() {
+    let codeContainer = document.getElementById("pythonCode");
+
+    if (codeContainer.style.display === "none") {
+        codeContainer.style.display = "block";
+
+        // Paste your full Python program here as a string
+        codeContainer.textContent = `
+# EduTrack Aether - Python Version
+
+students = []
+
+def add_student():
+    name = input("Enter student name: ")
+    subjects = input("Enter subjects separated by commas: ").split(",")
+    marks = []
+    for sub in subjects:
+        m = float(input(f"Enter marks for {sub.strip()}: "))
+        marks.append(m)
+    students.append({"name": name, "subjects": [s.strip() for s in subjects], "marks": marks})
+
+def show_students():
+    for i, s in enumerate(students):
+        print(f"{i+1}. {s['name']} - Total: {sum(s['marks'])}")
+
+# Example usage:
+# add_student()
+# show_students()
+        `;
+    } else {
+        codeContainer.style.display = "none";
+    }
+}
